@@ -1,7 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid #3A68B8;
+  color: #FFFFFF;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #3A68B8;
+  color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.header {
+  width: 100%;
+  min-height: 900px;
+  background-color: #09111e;
+  padding: 0 180px 0 200px;
+}
+
+.header .header__navbar {
+  width: 100%;
+  height: 100px;
+  /* Note: backdrop-filter has minimal browser support */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .header__navbar .header__nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .header__navbar .header__nav li {
+  list-style-type: none;
+  margin: 25px;
+}
+
+.header .header__navbar .header__nav li a {
+  text-decoration: none;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+
+.header .header__navbar .header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header__navbar .header__logo img {
+  width: 44px;
+  height: 57px;
+  margin-right: 15px;
+}
+
+.header .header__navbar .header__logo h1 {
+  color: #3A68B8;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22.5455px;
+  line-height: 31px;
+  /* identical to box height */
+}
+
+.header .header__navbar button {
+  width: 112px;
+  height: 52px;
 }
 /*# sourceMappingURL=style.css.map */
