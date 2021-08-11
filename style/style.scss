@@ -27,7 +27,7 @@ button{
 
 .header{
     width: 100%;
-    min-height: 900px;
+    min-height: 935px;
     background-color: $headerColor;
     padding: 0 180px 0 200px;
     .header__navbar{
@@ -57,6 +57,9 @@ button{
                     line-height: 22px;
                     /* identical to box height */
                     color: $textColor;
+                    &:hover{
+                        color: $mainColor;
+                    }
 
                 }
             }
@@ -84,6 +87,90 @@ button{
         button{
             width: 112px;
             height: 52px;
+        }
+    }
+
+    .header__main__container{
+        width: 100%;
+        min-height: 600px;
+        display: flex;
+        justify-content: space-between;
+
+        .header__title{
+            color: $textColor;
+            margin-top: 160px;
+            width: 40%;
+            h5{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 160%;
+                /* identical to box height, or 29px */
+                color: $mainColor;
+                text-transform: uppercase;
+            }
+
+            h1{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 55px;
+                line-height: 130%;
+                /* or 71px */
+                margin: 10px 0 40px 0;
+            }
+
+            p{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 160%;
+                /* or 29px */
+                margin-bottom: 50px;
+            }
+
+            button{
+                padding: 15px 30px;
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 27px;
+                box-shadow: 28px 33px 40px -27px rgba(25,108,210,0.62);
+                &:first-child{
+                    margin-right: 10px;
+                }
+                i{
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        .header__img{
+            margin-top: 49px;
+            max-width: 600px;
+            max-height: 600px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .header_footer_icons{
+        margin-top: 150px;
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+        background-color: linear-gradient(180deg, rgba(255, 255, 255, 0.2) -41.9%, rgba(255, 255, 255, 0.4) 260.24%);
+        // opacity: 0.1;
+        backdrop-filter: blur(200px);
+        img{
+            height: 59px;
         }
     }
 }
